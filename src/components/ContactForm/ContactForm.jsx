@@ -13,7 +13,7 @@ export const ContactForm = () => {
     const form = event.target;
     const newName = form.elements.name.value;
     const newNumber = form.elements.number.value;
-
+    //rules
     if (contacts.find(contact => contact.name === newName)) {
       alert(`${newName} is already in your contact list.`);
     } else if (
